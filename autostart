@@ -1,0 +1,23 @@
+# Programs that will run after Openbox has started 
+
+# Set the wallpaper (hsetroot must be installed)
+#hsetroot -fill Path/To/Picture.jpg &
+
+# Run a Composite manager
+xcompmgr -n & #for shadows: -c -t-5 -l-5 -r4.2 -o.55 &
+
+# SCIM support (for typing non-english characters)
+#scim -d &
+
+# A panel for good times
+tint2 &
+
+#or use panel planck (certainly must be installed first...)
+#plank
+
+# Sound Regler für tint2
+(sleep 3s && volti) &
+
+#start network applet
+(sleep 3s && nm-applet)
+
