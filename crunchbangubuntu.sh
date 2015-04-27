@@ -7,7 +7,7 @@ read -p "Installer: Do you really want to crunchbang your xfce?(y/n):" answer
 
 case "$answer" in
         Yes|yes|Y|y|"") echo "Ok..."
-            sudo apt-get install -y xorg mdm gedit gksu thunar xfce4-terminal openbox obconf obmenu tint2 xcompmgr nitrogen hsetroot;;
+            sudo apt-get install -y xorg mdm gedit gksu network-manager network-manager-gnome thunar xfce4-terminal openbox obconf obmenu tint2 xcompmgr nitrogen hsetroot;;
         No|no|N|n) echo "Aborted."
             exit 1
             ;;
