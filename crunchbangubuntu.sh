@@ -54,12 +54,12 @@ fi
 
 sleep 3
 
-read -p "Finished...! Do you want to reboot out now?(y/n):" answer
+read -p "Finished...! Do you want to reboot now?(y/n):" answer
 
 case "$answer" in
         Yes|yes|Y|y|"") echo "Ok..."
             sudo reboot;;
-        No|no|N|n) echo "Well, no problem..."
+        No|no|N|n) echo "Well, no problem command line is cool either ..."
             exit 0
             ;;
             *) echo "Unknown parameter" 
