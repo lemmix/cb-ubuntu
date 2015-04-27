@@ -14,7 +14,7 @@ case "$answer" in
             *) echo "Unknown parameter" 
             ;;
 esac
-
+#sudo /usr/lib/lightdm/lightdm-set-defaults --autologin BENUTZERNAME
 if [ $? -ne 0 ]
 then
 	echo "Something went wrong! One or more packages...[Failed]" >&2
