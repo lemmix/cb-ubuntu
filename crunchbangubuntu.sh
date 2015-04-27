@@ -37,7 +37,7 @@ fi
 read -p "Make folder ~/.config/openbox/ and copy files into it?(y/n):" answer
 
 case "$answer" in
-        Yes|yes|Y|y|"") echo "Ok..."
+        Yes|yes|Y|y|"") echo "OK..."
             sudo mkdir ~/.config/openbox/ && sudo cp menu.xml rc.xml autostart ~/.config/openbox/;;
         No|no|N|n) echo "Standard files will be used!"
             ;;
@@ -57,9 +57,9 @@ sleep 3
 read -p "Finished...! Do you want to reboot now?(y/n):" answer
 
 case "$answer" in
-        Yes|yes|Y|y|"") echo "Ok..."
+        Yes|yes|Y|y|"") echo "OK..."
             sudo reboot;;
-        No|no|N|n) echo "Well, no problem command line is cool either ..."
+        No|no|N|n) echo "Going to command line..."
             exit 0
             ;;
             *) echo "Unknown parameter" 
